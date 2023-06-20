@@ -1,0 +1,17 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "reader-writer-queue",
+    "version": "1.1.0",
+    "description": "A single-producer, single-consumer lock-free queue for C++",
+    "headers": [
+        "atomicops.h",
+        "readerwritercircularbuffer.h",
+        "readerwriterqueue.h"],
+    "build": {
+        "srcDir": ".",
+        "srcFilter": [
+            "-<benchmarks>",
+            "-<tests>"
+        ]
+    }
+}
