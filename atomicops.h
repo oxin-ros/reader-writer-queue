@@ -364,9 +364,9 @@ extern "C" {
 #elif defined(__unix__)
 #include <semaphore.h>
 #elif defined(FREERTOS)
-#include <FreeRTOS.h>
-#include <semphr.h>
-#include <task.h>
+#include <freertos/FreeRTOS.h>
+#include <freertos/semphr.h>
+#include <freertos/task.h>
 #endif
 
 namespace moodycamel
